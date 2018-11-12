@@ -1,7 +1,7 @@
 package com.javiermasero.data.api
 
 import com.javiermasero.domain.model.Page
-import io.reactivex.Flowable
+import io.reactivex.Single
 import retrofit2.http.GET
 
 interface ApiService{
@@ -10,6 +10,6 @@ interface ApiService{
 
     }
     @GET("top_rated")
-    fun getPage(): Flowable<Page>
+    fun getPage(): Single<Page>
 
 }

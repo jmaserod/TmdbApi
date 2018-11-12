@@ -14,5 +14,5 @@ interface FilmRepository {
 }
 
 interface PageRepository{
-    fun getPage(): Flowable<Page>
+    fun getPage(): Single<Page>
 }
