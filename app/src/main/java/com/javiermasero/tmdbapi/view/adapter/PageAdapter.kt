@@ -32,13 +32,16 @@ class PageAdapter (private var items: MutableList<PageView> = mutableListOf(),
         notifyItemInserted(items.size - 1)
     }
 
-    
+
 
     override fun getItemCount(): Int = items.size
 
 
     class PageViewHolder (itemView: View, onItemClick: (Int) -> Unit,
                           onItemSelected: (Int) -> Unit) : RecyclerView.ViewHolder(itemView){
+        init {
+            itemView.setOnClickListener { onItemClick(adapterPosition) }
+        }
 
     }
 }
