@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.javiermasero.tmdbapi.R
 import com.javiermasero.tmdbapi.model.PageView
+import kotlinx.android.synthetic.main.element.view.*
 
 class PageAdapter (private var items: MutableList<PageView> = mutableListOf(),
                           private val onItemClick: (PageView) -> Unit,
@@ -19,7 +20,7 @@ class PageAdapter (private var items: MutableList<PageView> = mutableListOf(),
     }
 
     override fun onBindViewHolder(holder: PageViewHolder, position: Int) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        holder?.bind(items[position])
     }
 
     fun replaceItems(items: MutableList<PageView>) {
@@ -41,6 +42,13 @@ class PageAdapter (private var items: MutableList<PageView> = mutableListOf(),
                           onItemSelected: (Int) -> Unit) : RecyclerView.ViewHolder(itemView){
         init {
             itemView.setOnClickListener { onItemClick(adapterPosition) }
+        }
+
+        fun bind(pageView: PageView) {
+
+            itemView.title.text= pageView.resultFilm.get(0).title
+            itemView.descriptionDetail.text= pageView.resultFilm.get(0).title
+
         }
 
     }

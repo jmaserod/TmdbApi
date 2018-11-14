@@ -3,7 +3,7 @@ package com.javiermasero.tmdbapi.presenter
 import com.javiermasero.tmdbapi.error.ErrorHandler
 
 
-class MainPresenter(private val errorHandler: com.javiermasero.tmdbapi.error.ErrorHandler, view: MainPresenter.View) : Presenter<MainPresenter.View>(errorHandler, view) {
+class MainPresenter(override val errorHandler: com.javiermasero.tmdbapi.error.ErrorHandler, view: MainPresenter.View) : Presenter<MainPresenter.View>(errorHandler, view) {
 
 
     override fun initialize() {}
@@ -16,6 +16,10 @@ class MainPresenter(private val errorHandler: com.javiermasero.tmdbapi.error.Err
         // Nothing to do yet
     }
 
-    interface View : Presenter.View {}
+    interface View : Presenter.View {
+
+        fun navigateShowList()
+
+    }
 
 }
