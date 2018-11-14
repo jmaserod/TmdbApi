@@ -7,12 +7,10 @@ import com.github.salomonbrys.kodein.instance
 import com.github.salomonbrys.kodein.singleton
 import com.javiermasero.data.api.ApiService
 import com.javiermasero.data.api.createService
-import com.javiermasero.data.constants.BuildType
-import com.javiermasero.data.constants.buildType
-import com.javiermasero.data.datasource.NetworkDataSource
 import com.javiermasero.domain.executor.Executor
-import com.javiermasero.tmdbapi.error.ErrorHandler
+import com.javiermasero.domain.interactor.GetFilmsUseCase
 import com.javiermasero.tmdbapi.error.AndroidErrorHandler
+import com.javiermasero.tmdbapi.error.ErrorHandler
 import com.javiermasero.tmdbapi.executor.RxExecutor
 
 /**
@@ -25,12 +23,13 @@ fun appModule(context: Context) = Kodein.Module {
 }
 
 val domainModule = Kodein.Module {
-    // Add here data dependencies
+    bind<GetFilmsUseCase>() with singleton { GetFilmsUseCase(repository = instance(), executor = instance()) }
 }
 
 val dataModule = Kodein.Module {
-    // Add here data dependencies
-/* API SERVICES */
+
+    // TODO("Add repositories and datasources here")
+
     bind<ApiService>() with singleton {
         createService(ApiService::class.java, ApiService.ENDPOINT)
     }

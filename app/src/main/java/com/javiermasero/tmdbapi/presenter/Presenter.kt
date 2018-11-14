@@ -5,7 +5,7 @@ import com.javiermasero.tmdbapi.error.ErrorHandler
 /**
  * Presenter
  */
-abstract class Presenter<out V : Presenter.View>(protected open val errorHandler: ErrorHandler, val view: V) {
+abstract class Presenter<out V : Presenter.View>(protected val errorHandler: ErrorHandler, val view: V) {
 
     abstract fun initialize()
 

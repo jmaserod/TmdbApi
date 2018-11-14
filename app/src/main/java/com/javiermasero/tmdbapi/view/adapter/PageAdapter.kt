@@ -1,56 +1,20 @@
 package com.javiermasero.tmdbapi.view.adapter;
 
-import android.support.v7.widget.RecyclerView
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
+import com.javiermasero.domain.model.Film
 import com.javiermasero.tmdbapi.R
-import com.javiermasero.tmdbapi.model.PageView
 import kotlinx.android.synthetic.main.element.view.*
 
-class PageAdapter (private var items: MutableList<PageView> = mutableListOf(),
-                          private val onItemClick: (PageView) -> Unit,
-                          private val onItemSelected: (PageView) -> Unit): RecyclerView.Adapter<PageAdapter.PageViewHolder>() {
+class FilmAdapter : RootAdapter<Film>() {
+    override val itemLayoutId: Int = R.layout.element
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PageViewHolder {
-        val view = LayoutInflater.from(parent?.context).inflate(R.layout.activity_main, parent, false)
-        return PageViewHolder(itemView = view,
-                onItemClick = { onItemClick(items[it]) },
-                onItemSelected = { onItemSelected(items[it]) })
-    }
+    override fun viewHolder(view: View): RootViewHolder<Film> = PageViewHolder(view)
 
-    override fun onBindViewHolder(holder: PageViewHolder, position: Int) {
-        holder?.bind(items[position])
-    }
-
-    fun replaceItems(items: MutableList<PageView>) {
-        this.items = items
-        notifyDataSetChanged()
-    }
-
-    fun addItem(pageView: PageView) {
-        this.items.add(pageView)
-        notifyItemInserted(items.size - 1)
-    }
-
-
-
-    override fun getItemCount(): Int = items.size
-
-
-    class PageViewHolder (itemView: View, onItemClick: (Int) -> Unit,
-                          onItemSelected: (Int) -> Unit) : RecyclerView.ViewHolder(itemView){
-        init {
-            itemView.setOnClickListener { onItemClick(adapterPosition) }
+    class PageViewHolder(itemView: View) : RootViewHolder<Film>(itemView = itemView) {
+        override fun bind(model: Film) {
+            itemView.title.text = model.title
+            itemView.descriptionDetail.text = model.title
         }
-
-        fun bind(pageView: PageView) {
-
-            itemView.title.text= pageView.resultFilm.get(0).title
-            itemView.descriptionDetail.text= pageView.resultFilm.get(0).title
-
-        }
-
     }
 }
 
