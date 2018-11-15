@@ -5,6 +5,7 @@ import com.javiermasero.domain.model.Film
 import com.javiermasero.tmdbapi.R
 import kotlinx.android.synthetic.main.element.view.*
 
+
 class FilmAdapter : RootAdapter<Film>() {
     override val itemLayoutId: Int = R.layout.element
 
@@ -13,7 +14,7 @@ class FilmAdapter : RootAdapter<Film>() {
     class PageViewHolder(itemView: View) : RootViewHolder<Film>(itemView = itemView) {
         override fun bind(model: Film) {
             itemView.title.text = model.title
-            itemView.descriptionDetail.text = model.title
+            itemView.descriptionDetail.text = model.description
         }
     }
 }

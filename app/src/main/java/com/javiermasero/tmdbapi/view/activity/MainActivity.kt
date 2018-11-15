@@ -1,5 +1,6 @@
 package com.javiermasero.tmdbapi.view.activity
 
+import android.support.v7.widget.RecyclerView
 import android.view.View
 import com.github.salomonbrys.kodein.Kodein
 import com.github.salomonbrys.kodein.bind
@@ -10,6 +11,7 @@ import com.javiermasero.tmdbapi.R
 import com.javiermasero.tmdbapi.presenter.MainPresenter
 import com.javiermasero.tmdbapi.presenter.Presenter
 import com.javiermasero.tmdbapi.view.adapter.FilmAdapter
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.view_progress.*
 
 class MainActivity : RootActivity<MainPresenter.View>(), MainPresenter.View {
@@ -33,13 +35,18 @@ class MainActivity : RootActivity<MainPresenter.View>(), MainPresenter.View {
 
     override fun initializeUI() {
         TODO("Initialize recycler view with adapter here")
+
+
     }
 
+
     override fun registerListeners() {
-        // Nothing to do yet
+
     }
 
     override fun showFilms(resultFilm: List<Film>) {
         TODO("Add films to adapter here")
+        val adapter: FilmAdapter
+        adapter.addAll(resultFilm.toMutableList())
     }
 }

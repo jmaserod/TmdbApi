@@ -7,8 +7,14 @@ import com.github.salomonbrys.kodein.instance
 import com.github.salomonbrys.kodein.singleton
 import com.javiermasero.data.api.ApiService
 import com.javiermasero.data.api.createService
+import com.javiermasero.data.datasource.DataSourcePage
+import com.javiermasero.data.datasource.NetworkDataSource
+import com.javiermasero.data.repository.TmdbFilmRepository
+import com.javiermasero.data.repository.TmdbPageRepository
 import com.javiermasero.domain.executor.Executor
 import com.javiermasero.domain.interactor.GetFilmsUseCase
+import com.javiermasero.domain.repository.FilmRepository
+import com.javiermasero.domain.repository.PageRepository
 import com.javiermasero.tmdbapi.error.AndroidErrorHandler
 import com.javiermasero.tmdbapi.error.ErrorHandler
 import com.javiermasero.tmdbapi.executor.RxExecutor
@@ -33,6 +39,15 @@ val dataModule = Kodein.Module {
     bind<ApiService>() with singleton {
         createService(ApiService::class.java, ApiService.ENDPOINT)
     }
+
+    /*DATASOURCES*/
+    bind<NetworkDataSource>() with singleton { DataSourcePage(apiService = instance()) }
+
+    /*REPOSITORY*/
+    bind<PageRepository>() with singleton {TmdbPageRepository(network = instance()) }
+    bind<FilmRepository>() with singleton {TmdbFilmRepository(network = instance())}
+
+
 
 
 }
