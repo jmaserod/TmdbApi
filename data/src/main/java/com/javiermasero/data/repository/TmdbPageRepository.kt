@@ -6,9 +6,10 @@ import com.javiermasero.domain.repository.PageRepository
 import io.reactivex.Single
 
 class TmdbPageRepository( private val network: NetworkDataSource) : PageRepository {
-    override fun getPage(): Single<Page> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
+
+
+    override fun getPage(apikey: String, language: String, page: Int): Single<Page> =  network.getPage(apikey = apikey, language = language, page = page)
+
 
 
 }

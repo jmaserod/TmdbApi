@@ -9,7 +9,7 @@ import com.javiermasero.domain.repository.PageRepository
  */
 class GetFilmsUseCase(private val repository: PageRepository, executor: Executor) : SingleInteractor<Page>(executor = executor) {
 
-    fun execute(onSuccess: (Page) -> Unit, onError: (Throwable) -> Unit) {
-        super.execute(onSuccess, onError, repository.getPage())
+    fun execute(apikey: String, language: String, page: Int,onSuccess: (Page) -> Unit, onError: (Throwable) -> Unit) {
+        super.execute(onSuccess, onError, repository.getPage(apikey,language,page))
     }
 }

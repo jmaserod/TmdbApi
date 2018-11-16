@@ -11,9 +11,6 @@ import io.reactivex.Single
 interface FilmRepository {
     fun getFilm(): Single<Film>
 }
-
-
-// TODO("Implement the repository in the data module")
 interface PageRepository {
-    fun getPage(): Single<Page>
+    fun getPage(apikey: String, language: String, page: Int): Single<Page>
 }

@@ -13,7 +13,13 @@ class MainPresenter(private val getFilmsUseCase: GetFilmsUseCase,
 
     override fun initialize() {
         getFilmsUseCase.execute(
-                onSuccess = { view.showFilms(it.resultFilm) },
+                apikey = "c231855877723e26e1da9c71feb1ba02",
+                language = "en-US",
+                page = 3,
+                onSuccess = {
+                    view.showFilms(it.resultFilm)
+                    view.hideProgress()
+                },
                 onError = onError { view.showError(it) }
         )
     }
