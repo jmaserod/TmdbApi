@@ -1,5 +1,6 @@
 package com.javiermasero.data.mapper
 
+import android.util.Log
 import com.javiermasero.data.model.FilmsResponseDto
 import com.javiermasero.data.model.Result
 import com.javiermasero.domain.model.Film
@@ -15,9 +16,10 @@ fun FilmsResponseDto.toModel(): Page = Page(
 fun Result.toModel(): Film = Film(
         id = this.id,
         description = this.overview,
-        title = this.original_title
+        title = this.title,
+        image = this.poster_path,
+        average = this.vote_average
 )
-
 fun FilmsResponseDto.hello() {
     val films = mutableListOf<Film>()
     this.results.forEach { result ->

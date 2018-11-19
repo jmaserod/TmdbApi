@@ -15,7 +15,7 @@ class MainPresenter(private val getFilmsUseCase: GetFilmsUseCase,
         getFilmsUseCase.execute(
                 apikey = "c231855877723e26e1da9c71feb1ba02",
                 language = "en-US",
-                page = 3,
+                page = 1,
                 onSuccess = {
                     view.showFilms(it.resultFilm)
                     view.hideProgress()
