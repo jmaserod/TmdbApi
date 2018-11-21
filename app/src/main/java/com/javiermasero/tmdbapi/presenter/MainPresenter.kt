@@ -6,7 +6,7 @@ import com.javiermasero.domain.model.Film
 import com.javiermasero.tmdbapi.error.ErrorHandler
 
 
-class MainPresenter(private val getFilmsUseCase: GetFilmsUseCase,/*private val getFilmDetailsUseCase: GetFilmDetailsUseCase,*/
+class MainPresenter(private val getFilmsUseCase: GetFilmsUseCase,
                     errorHandler: ErrorHandler,
                     view: MainPresenter.View)
     : Presenter<MainPresenter.View>(errorHandler, view) {
@@ -24,13 +24,6 @@ class MainPresenter(private val getFilmsUseCase: GetFilmsUseCase,/*private val g
                 onError = onError { view.showError(it) }
         )
 
-        getFilmDetailsUseCase.execute(
-                onSuccess = {
-                    view.addFilm(it.resultFilm, id = 1)
-                    view.hideProgress()
-                },
-                onError = onError { view.showError(it) }
-        )
     }
 
     override fun resume() {}
@@ -39,12 +32,10 @@ class MainPresenter(private val getFilmsUseCase: GetFilmsUseCase,/*private val g
 
     override fun destroy() {
         getFilmsUseCase.clear()
-        //getFilmDetailsUseCase.clear()
     }
 
     interface View : Presenter.View {
         fun showFilms(resultFilm: List<Film>)
-        fun addFilm(resultFilm: List<Film>, id: Int)
     }
 
 }

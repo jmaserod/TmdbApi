@@ -10,6 +10,7 @@ import com.github.salomonbrys.kodein.instance
 import com.github.salomonbrys.kodein.provider
 import com.javiermasero.domain.model.Film
 import com.javiermasero.tmdbapi.R
+import com.javiermasero.tmdbapi.navigator.navigateToSecondActivity
 import com.javiermasero.tmdbapi.presenter.MainPresenter
 import com.javiermasero.tmdbapi.view.adapter.DetailsAdapter
 import com.javiermasero.tmdbapi.view.adapter.FilmAdapter
@@ -29,7 +30,6 @@ class MainActivity : RootActivity<MainPresenter.View>(), MainPresenter.View {
         bind<MainPresenter>() with provider {
             MainPresenter(
                     getFilmsUseCase = instance(),
-                   // getFilmDetailsUseCase = instance(),
                     errorHandler = instance(),
                     view = this@MainActivity
             )
@@ -43,6 +43,9 @@ class MainActivity : RootActivity<MainPresenter.View>(), MainPresenter.View {
         films.layoutManager = LinearLayoutManager(this)
 
     }
+    fun navigateToSecondActivity() {
+        navigateToSecondActivity(this)
+    }
 
     override fun registerListeners() {
 
@@ -50,9 +53,5 @@ class MainActivity : RootActivity<MainPresenter.View>(), MainPresenter.View {
 
     override fun showFilms(resultFilm: List<Film>) {
         filmsAdapter.addAll(resultFilm.toMutableList())
-    }
-
-     override fun addFilm(resultFilm: List<Film>, id: Int) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 }

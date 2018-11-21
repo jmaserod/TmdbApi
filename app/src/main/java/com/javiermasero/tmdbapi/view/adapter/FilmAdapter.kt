@@ -9,6 +9,7 @@ import android.view.View
 import android.widget.Toast
 
 import com.bumptech.glide.Glide
+import com.bumptech.glide.Glide.init
 
 import com.javiermasero.domain.model.Film
 import com.javiermasero.tmdbapi.R
@@ -26,16 +27,19 @@ class FilmAdapter : RootAdapter<Film>() {
 
     override fun viewHolder(view: View): RootViewHolder<Film> = PageViewHolder(view)
 
-    class PageViewHolder(itemView: View) : RootViewHolder<Film>(itemView = itemView) {
+    class PageViewHolder(itemView: View) : RootViewHolder<Film>(itemView = itemView){
+
+        init {
+            itemView.title.setOnClickListener { onItemClickListener(adapterPosition) }
+        }
         override fun bind(model: Film) {
             itemView.title.text = model.title
             itemView.description.text = model.description
             Glide.with(itemView).load("https://image.tmdb.org/t/p/original" + model.image).into(itemView.poster)
             itemView.average.text = "Note: " + model.average.toString()
-            itemView.setOnClickListener {
-                itemView.context.startActivity(Intent(itemView.context, SecondActivity::class.java).putExtra("id", itemView.id))
-
-            }
+            //itemView.setOnClickListener {
+            //    itemView.context.startActivity(Intent(itemView.context, SecondActivity::class.java).putExtra("id", itemView.id))
+            //}
         }
     }
 }
