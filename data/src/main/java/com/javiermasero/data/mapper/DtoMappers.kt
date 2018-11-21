@@ -18,7 +18,11 @@ fun Result.toModel(): Film = Film(
         description = this.overview,
         title = this.title,
         image = this.poster_path,
-        average = this.vote_average
+        average = this.vote_average,
+        count = this.vote_count,
+        backdrop = this.backdrop_path,
+        adult = this.adult,
+        date =  this.release_date
 )
 fun FilmsResponseDto.hello() {
     val films = mutableListOf<Film>()

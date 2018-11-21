@@ -1,9 +1,7 @@
 package com.javiermasero.tmdbapi.view.activity
 
-
 import android.support.v7.widget.LinearLayoutManager
 import android.view.View
-import com.bumptech.glide.Glide
 import com.github.salomonbrys.kodein.Kodein
 import com.github.salomonbrys.kodein.bind
 import com.github.salomonbrys.kodein.instance
@@ -11,12 +9,13 @@ import com.github.salomonbrys.kodein.provider
 import com.javiermasero.domain.model.Film
 import com.javiermasero.tmdbapi.R
 import com.javiermasero.tmdbapi.presenter.MainPresenter
+import com.javiermasero.tmdbapi.presenter.Presenter
 import com.javiermasero.tmdbapi.view.adapter.DetailsAdapter
 import com.javiermasero.tmdbapi.view.adapter.FilmAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.view_progress.*
 
-class MainActivity : RootActivity<MainPresenter.View>(), MainPresenter.View {
+class SecondActivity: RootActivity<MainPresenter.View>(), MainPresenter.View {
 
 
     override val progress: View by lazy { progressView }
@@ -29,30 +28,33 @@ class MainActivity : RootActivity<MainPresenter.View>(), MainPresenter.View {
         bind<MainPresenter>() with provider {
             MainPresenter(
                     getFilmsUseCase = instance(),
-                   // getFilmDetailsUseCase = instance(),
+                    //getFilmDetailsUseCase = instance(),
                     errorHandler = instance(),
-                    view = this@MainActivity
+                    view = this@SecondActivity
             )
         }
     }
 
-    private val filmsAdapter : FilmAdapter = FilmAdapter()
+
+    private val detailsAdapter : DetailsAdapter = DetailsAdapter()
 
     override fun initializeUI() {
-        films.adapter = filmsAdapter
+        films.adapter = detailsAdapter
         films.layoutManager = LinearLayoutManager(this)
 
     }
+
 
     override fun registerListeners() {
 
     }
 
-    override fun showFilms(resultFilm: List<Film>) {
-        filmsAdapter.addAll(resultFilm.toMutableList())
+     override fun addFilm(resultFilm: List<Film>, id: Int) {
+        detailsAdapter.add(resultFilm[intent.getIntExtra("id",id)])
     }
 
-     override fun addFilm(resultFilm: List<Film>, id: Int) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    override fun showFilms(resultFilm: List<Film>) {
+
     }
+
 }
