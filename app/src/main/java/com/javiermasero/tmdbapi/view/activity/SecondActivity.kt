@@ -6,18 +6,14 @@ import com.github.salomonbrys.kodein.Kodein
 import com.github.salomonbrys.kodein.bind
 import com.github.salomonbrys.kodein.instance
 import com.github.salomonbrys.kodein.provider
-import com.javiermasero.domain.model.Film
+import com.javiermasero.data.constants.Constants.Companion.DEFAULT_INT
 import com.javiermasero.tmdbapi.R
-import com.javiermasero.tmdbapi.navigator.navigateToSecondActivity
 import com.javiermasero.tmdbapi.presenter.DetailsPresenter
-import com.javiermasero.tmdbapi.presenter.MainPresenter
-import com.javiermasero.tmdbapi.presenter.Presenter
 import com.javiermasero.tmdbapi.view.adapter.DetailsAdapter
-import com.javiermasero.tmdbapi.view.adapter.FilmAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.view_progress.*
 
-class SecondActivity: RootActivity<DetailsPresenter.View>(), DetailsPresenter.View {
+class SecondActivity : RootActivity<DetailsPresenter.View>(), DetailsPresenter.View {
 
     companion object {
         const val FILM_ID = "FILM_ID"
@@ -40,7 +36,7 @@ class SecondActivity: RootActivity<DetailsPresenter.View>(), DetailsPresenter.Vi
     }
 
 
-    private val detailsAdapter : DetailsAdapter = DetailsAdapter()
+    private val detailsAdapter: DetailsAdapter = DetailsAdapter()
 
     override fun initializeUI() {
         films.adapter = detailsAdapter
@@ -53,8 +49,10 @@ class SecondActivity: RootActivity<DetailsPresenter.View>(), DetailsPresenter.Vi
 
     }
 
-     override fun addFilm(id: Int) {
+    override fun addFilm(id: Int) {
 
     }
+
+    override fun getFilmId(): Int = intent?.extras?.getInt(FILM_ID) ?: DEFAULT_INT
 
 }

@@ -31,6 +31,7 @@ class DetailsPresenter(private val getFilmDetailsUseCase: GetFilmDetailsUseCase,
 
     interface View : Presenter.View {
         fun addFilm(id: Int)
+        fun getFilmId(): Int
     }
 
 }
