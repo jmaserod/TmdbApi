@@ -36,7 +36,9 @@ class MainActivity : RootActivity<MainPresenter.View>(), MainPresenter.View {
         }
     }
 
-    private val filmsAdapter : FilmAdapter = FilmAdapter()
+    private val filmsAdapter : FilmAdapter = FilmAdapter {
+
+    }
 
     override fun initializeUI() {
         films.adapter = filmsAdapter
