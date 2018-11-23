@@ -3,16 +3,14 @@ package com.javiermasero.tmdbapi.view.activity
 
 import android.support.v7.widget.LinearLayoutManager
 import android.view.View
-import com.bumptech.glide.Glide
 import com.github.salomonbrys.kodein.Kodein
 import com.github.salomonbrys.kodein.bind
 import com.github.salomonbrys.kodein.instance
 import com.github.salomonbrys.kodein.provider
 import com.javiermasero.domain.model.Film
 import com.javiermasero.tmdbapi.R
-import com.javiermasero.tmdbapi.navigator.navigateToSecondActivity
+//import com.javiermasero.tmdbapi.navigator.navigateToSecondActivity
 import com.javiermasero.tmdbapi.presenter.MainPresenter
-import com.javiermasero.tmdbapi.view.adapter.DetailsAdapter
 import com.javiermasero.tmdbapi.view.adapter.FilmAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.view_progress.*
@@ -43,8 +41,9 @@ class MainActivity : RootActivity<MainPresenter.View>(), MainPresenter.View {
         films.layoutManager = LinearLayoutManager(this)
 
     }
-    fun navigateToSecondActivity() {
-        navigateToSecondActivity(this)
+
+    override fun navigateToSecondActivity() {
+        //navigateToSecondActivity(this)
     }
 
     override fun registerListeners() {

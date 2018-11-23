@@ -8,7 +8,7 @@ import com.github.salomonbrys.kodein.instance
 import com.github.salomonbrys.kodein.provider
 import com.javiermasero.domain.model.Film
 import com.javiermasero.tmdbapi.R
-import com.javiermasero.tmdbapi.navigator.navigateToSecondActivity
+
 import com.javiermasero.tmdbapi.presenter.DetailsPresenter
 import com.javiermasero.tmdbapi.presenter.MainPresenter
 import com.javiermasero.tmdbapi.presenter.Presenter
@@ -51,6 +51,7 @@ class SecondActivity: RootActivity<DetailsPresenter.View>(), DetailsPresenter.Vi
     }
 
      override fun addFilm(id: Int) {
+
 
     }
 

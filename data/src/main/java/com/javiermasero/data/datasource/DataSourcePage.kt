@@ -11,4 +11,5 @@ class DataSourcePage(private val apiService : ApiService): NetworkDataSource{
     override fun getPage(apikey: String, language: String,page: Int): Single<Page> =
         apiService.getPage(apikey = apikey , language = language, page = page)
                 .map { response -> response.toModel() }
+
 }

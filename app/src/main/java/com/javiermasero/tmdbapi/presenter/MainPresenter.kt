@@ -20,6 +20,7 @@ class MainPresenter(private val getFilmsUseCase: GetFilmsUseCase,
                 onSuccess = {
                     view.showFilms(it.resultFilm)
                     view.hideProgress()
+                    //view.navigateToSecondActivity()
                 },
                 onError = onError { view.showError(it) }
         )
@@ -36,6 +37,7 @@ class MainPresenter(private val getFilmsUseCase: GetFilmsUseCase,
 
     interface View : Presenter.View {
         fun showFilms(resultFilm: List<Film>)
+        fun navigateToSecondActivity()
     }
 
 }
