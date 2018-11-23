@@ -11,9 +11,10 @@ class DetailsPresenter(private val getFilmDetailsUseCase: GetFilmDetailsUseCase,
 
 
     override fun initialize() {
-        getFilmDetailsUseCase.execute(
+       getFilmDetailsUseCase.execute(
+                id = 1,
                 onSuccess = {
-                    view.addFilm(id = 0)
+                    view.addFilm(id = 1)
                     view.hideProgress()
                 },
                 onError = onError { view.showError(it) }

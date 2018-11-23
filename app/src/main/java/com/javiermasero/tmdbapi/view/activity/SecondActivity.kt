@@ -8,6 +8,7 @@ import com.github.salomonbrys.kodein.instance
 import com.github.salomonbrys.kodein.provider
 import com.javiermasero.data.constants.Constants.Companion.DEFAULT_INT
 import com.javiermasero.tmdbapi.R
+
 import com.javiermasero.tmdbapi.presenter.DetailsPresenter
 import com.javiermasero.tmdbapi.view.adapter.DetailsAdapter
 import kotlinx.android.synthetic.main.activity_main.*
@@ -50,6 +51,7 @@ class SecondActivity : RootActivity<DetailsPresenter.View>(), DetailsPresenter.V
     }
 
     override fun addFilm(id: Int) {
+
 
     }
 

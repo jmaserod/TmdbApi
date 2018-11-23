@@ -8,7 +8,7 @@ import com.javiermasero.domain.repository.PageRepository
 
 class GetFilmDetailsUseCase (private val repository: FilmRepository, executor: Executor) : SingleInteractor<Film>(executor = executor) {
 
-    fun execute(onSuccess: (Film) -> Unit, onError: (Throwable) -> Unit) {
-        super.execute(onSuccess, onError, repository.getFilm())
+    fun execute(id: Int, onSuccess: (Film) -> Unit, onError: (Throwable) -> Unit) {
+        super.execute(onSuccess, onError, repository.getFilm(id))
     }
 }

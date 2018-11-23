@@ -14,6 +14,7 @@ interface ApiService{
     @GET("top_rated")
     fun getPage(@Query("api_key") apikey: String, @Query("language") language: String, @Query("page") page: Int): Single<FilmsResponseDto>
 
+
     // ?api_key=c231855877723e26e1da9c71feb1ba02&language=en-US&page=1
 
 }

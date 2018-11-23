@@ -16,7 +16,11 @@ class FilmAdapter(onItemClick: (Film) -> Unit) : RootAdapter<Film>(onItemClickLi
     class PageViewHolder(itemView: View) : RootViewHolder<Film>(itemView = itemView) {
 
         init {
-            itemView.title.setOnClickListener { onItemClickListener(adapterPosition) }
+            itemView.title.setOnClickListener {
+                onItemClickListener(adapterPosition)
+            }
+            itemView.description.setOnClickListener { onItemClickListener(adapterPosition) }
+            itemView.poster.setOnClickListener { onItemClickListener(adapterPosition) }
         }
 
         override fun bind(model: Film) {
@@ -24,9 +28,9 @@ class FilmAdapter(onItemClick: (Film) -> Unit) : RootAdapter<Film>(onItemClickLi
             itemView.description.text = model.description
             Glide.with(itemView).load("https://image.tmdb.org/t/p/original" + model.image).into(itemView.poster)
             itemView.average.text = "Note: " + model.average.toString()
-            //itemView.setOnClickListener {
-            //    itemView.context.startActivity(Intent(itemView.context, SecondActivity::class.java).putExtra("id", itemView.id))
-            //}
+            itemView.setOnClickListener {
+                itemView.context.startActivity(Intent(itemView.context, SecondActivity::class.java))
+            }
         }
     }
 }
