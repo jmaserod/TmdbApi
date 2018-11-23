@@ -19,6 +19,9 @@ import kotlinx.android.synthetic.main.view_progress.*
 
 class SecondActivity: RootActivity<DetailsPresenter.View>(), DetailsPresenter.View {
 
+    companion object {
+        const val FILM_ID = "FILM_ID"
+    }
 
     override val progress: View by lazy { progressView }
 

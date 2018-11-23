@@ -45,7 +45,7 @@ class MainActivity : RootActivity<MainPresenter.View>(), MainPresenter.View {
     }
 
     override fun navigateToFilmDetail(filmId: Int) {
-        navigateToSecondActivity(this)
+        navigateToSecondActivity(this, filmId)
     }
 
     override fun registerListeners() {
