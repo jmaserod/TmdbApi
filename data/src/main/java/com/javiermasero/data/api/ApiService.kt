@@ -1,9 +1,11 @@
 package com.javiermasero.data.api
 
 import com.javiermasero.data.model.FilmsResponseDto
+import com.javiermasero.data.model.Result
 import com.javiermasero.domain.model.Page
 import io.reactivex.Single
 import retrofit2.http.GET
+import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface ApiService{
@@ -13,6 +15,9 @@ interface ApiService{
     }
     @GET("top_rated")
     fun getPage(@Query("api_key") apikey: String, @Query("language") language: String, @Query("page") page: Int): Single<FilmsResponseDto>
+
+    @GET("{id}")
+    fun getFilm(@Path("id") filmId: Int, @Query("api_key") apikey: String, @Query("language") language: String): Single<Result>
 
 
     // ?api_key=c231855877723e26e1da9c71feb1ba02&language=en-US&page=1

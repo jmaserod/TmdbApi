@@ -7,6 +7,7 @@ import com.github.salomonbrys.kodein.bind
 import com.github.salomonbrys.kodein.instance
 import com.github.salomonbrys.kodein.provider
 import com.javiermasero.data.constants.Constants.Companion.DEFAULT_INT
+import com.javiermasero.domain.model.Film
 import com.javiermasero.tmdbapi.R
 
 import com.javiermasero.tmdbapi.presenter.DetailsPresenter
@@ -40,6 +41,7 @@ class SecondActivity : RootActivity<DetailsPresenter.View>(), DetailsPresenter.V
     private val detailsAdapter: DetailsAdapter = DetailsAdapter()
 
     override fun initializeUI() {
+
         films.adapter = detailsAdapter
         films.layoutManager = LinearLayoutManager(this)
 
@@ -50,9 +52,8 @@ class SecondActivity : RootActivity<DetailsPresenter.View>(), DetailsPresenter.V
 
     }
 
-    override fun addFilm(id: Int) {
-
-
+    override fun addFilm(film : Film) {
+        detailsAdapter.add(film)
     }
 
     override fun getFilmId(): Int = intent?.extras?.getInt(FILM_ID) ?: DEFAULT_INT

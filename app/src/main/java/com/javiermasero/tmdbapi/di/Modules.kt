@@ -12,6 +12,7 @@ import com.javiermasero.data.datasource.NetworkDataSource
 import com.javiermasero.data.repository.TmdbFilmRepository
 import com.javiermasero.data.repository.TmdbPageRepository
 import com.javiermasero.domain.executor.Executor
+import com.javiermasero.domain.interactor.GetFilmDetailsUseCase
 import com.javiermasero.domain.interactor.GetFilmsUseCase
 import com.javiermasero.domain.repository.FilmRepository
 import com.javiermasero.domain.repository.PageRepository
@@ -30,6 +31,7 @@ fun appModule(context: Context) = Kodein.Module {
 
 val domainModule = Kodein.Module {
     bind<GetFilmsUseCase>() with singleton { GetFilmsUseCase(repository = instance(), executor = instance()) }
+    bind<GetFilmDetailsUseCase>() with singleton { GetFilmDetailsUseCase(repository = instance(), executor = instance()) }
 }
 
 val dataModule = Kodein.Module {

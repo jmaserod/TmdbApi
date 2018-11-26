@@ -9,7 +9,7 @@ import com.github.salomonbrys.kodein.instance
 import com.github.salomonbrys.kodein.provider
 import com.javiermasero.domain.model.Film
 import com.javiermasero.tmdbapi.R
-//import com.javiermasero.tmdbapi.navigator.navigateToSecondActivity
+import com.javiermasero.tmdbapi.navigator.navigateToSecondActivity
 import com.javiermasero.tmdbapi.presenter.MainPresenter
 import com.javiermasero.tmdbapi.view.adapter.FilmAdapter
 import kotlinx.android.synthetic.main.activity_main.*

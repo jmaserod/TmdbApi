@@ -9,7 +9,7 @@ import io.reactivex.Single
  */
 
 interface FilmRepository {
-    fun getFilm(id: Int): Single<Film>
+    fun getFilm(filmId: Int, apikey: String, language: String): Single<Film>
 }
 interface PageRepository {
     fun getPage(apikey: String, language: String, page: Int): Single<Page>

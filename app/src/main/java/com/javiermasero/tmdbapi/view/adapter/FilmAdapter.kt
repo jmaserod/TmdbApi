@@ -28,9 +28,6 @@ class FilmAdapter(onItemClick: (Film) -> Unit) : RootAdapter<Film>(onItemClickLi
             itemView.description.text = model.description
             Glide.with(itemView).load("https://image.tmdb.org/t/p/original" + model.image).into(itemView.poster)
             itemView.average.text = "Note: " + model.average.toString()
-            itemView.setOnClickListener {
-                itemView.context.startActivity(Intent(itemView.context, SecondActivity::class.java))
-            }
         }
     }
 }

@@ -20,7 +20,6 @@ class MainPresenter(private val getFilmsUseCase: GetFilmsUseCase,
                 onSuccess = {
                     view.showFilms(it.resultFilm)
                     view.hideProgress()
-                    //view.navigateToSecondActivity()
                 },
                 onError = onError { view.showError(it) }
         )
