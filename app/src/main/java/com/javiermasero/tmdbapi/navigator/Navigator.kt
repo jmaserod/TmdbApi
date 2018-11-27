@@ -14,5 +14,5 @@ fun navigateToSecondActivity(context: RootActivity<*>, filmId: Int) {
     intent.putExtra(FILM_ID, filmId)
 
     context.startActivity(intent)
-    context.finish()
+    //context.finish()
 }

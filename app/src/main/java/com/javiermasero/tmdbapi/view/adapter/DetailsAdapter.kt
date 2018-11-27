@@ -26,12 +26,12 @@ class DetailsAdapter: RootAdapter<Film>() {
 
             itemView.titleDetail.text = model.title
             itemView.descriptionDetail.text = model.description
-            Glide.with(itemView).load("https://image.tmdb.org/t/p/original" + model.image).into(itemView.posterDetail)
+            //Glide.with(itemView).load("https://image.tmdb.org/t/p/original" + model.image).into(itemView.posterDetail)
             itemView.averageDetail.text = "Note: " + model.average.toString()
             Glide.with(itemView).load("https://image.tmdb.org/t/p/original" + model.backdrop).into(itemView.backdropDetail)
-            itemView.countDetail.text = model.count.toString()
-            itemView.adultDetail.text = model.adult.toString()
-            itemView.dateDetail.text = model.date
+            itemView.countDetail.text ="Votes: " + model.count.toString()
+            if(model.adult){itemView.adultDetail.text ="+18"}else{itemView.adultDetail.text ="TP"}
+            itemView.dateDetail.text ="Date: "+ model.date
         }
 
 
