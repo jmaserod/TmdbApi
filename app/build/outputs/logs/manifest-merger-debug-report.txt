@@ -1,0 +1,178 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:1:1-35:12
+INJECTED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:1:1-35:12
+INJECTED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:1:1-35:12
+INJECTED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:1:1-35:12
+MERGED from [:data] C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\data\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:design:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\a24c2562e451f1852a9fd525f511117a\AndroidManifest.xml:17:1-22:12
+MERGED from [pub.devrel:easypermissions:1.1.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\easypermissions-1.1.3.aar\97795c116b55807fc0656aa54f080f1a\AndroidManifest.xml:2:1-19:12
+MERGED from [com.github.salomonbrys.kodein:kodein-android:4.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\kodein-android-4.1.0.aar\d29c5a0070be23b9ff604c222a12f4f5\AndroidManifest.xml:2:1-8:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\4e3f4e17862690178b9d67f3660b88b3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\a07d4f072b3d4850fa5a50b5f2d17701\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\c6fd8c1398baeadec491009d247dda21\AndroidManifest.xml:2:1-13:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\rxandroid-2.0.1.aar\ed721e211629d80192ae3c0badebfc95\AndroidManifest.xml:15:1-21:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\0b692475041ba7f968d530aad12d222d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\0195500ad6d173b0a381b240ab2cb654\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\3e48c0960e89c336000c8254110488f7\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\a41d5b2f8c1c0398b2409708b2d62c4b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\938db0e77895df655203b72823ed18ec\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\c9be76d045b4966107f76b2a456e301b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\9b7ec61f6c78fa2d4a780fef83bcd69a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\9e77d3599f6135efd92e1e5ddbfb1d4e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\5aa1a4432318416495483b2deed6ffe7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\4cea9e01decb3819f28ff14df3f4adbb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\d3d8a1d0072055588fc89279ef093564\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\4c41bf36fe8c3f559ccca32751af8de2\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\16b6d0fd8e128222c468ee9b4243ab9a\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\fff71a19a096025afc443ed7556af885\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\55521d079352a1c3f56455fc7fc3916d\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:1:1-35:12
+INJECTED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:1:1-35:12
+INJECTED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:1:1-35:12
+	package
+		ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:2:5-39
+		INJECTED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:1:1-35:12
+		INJECTED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:1:1-35:12
+		INJECTED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:4:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:5:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:6:22-78
+application
+ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:8:5-34:19
+MERGED from [pub.devrel:easypermissions:1.1.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\easypermissions-1.1.3.aar\97795c116b55807fc0656aa54f080f1a\AndroidManifest.xml:11:5-17:19
+MERGED from [pub.devrel:easypermissions:1.1.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\easypermissions-1.1.3.aar\97795c116b55807fc0656aa54f080f1a\AndroidManifest.xml:11:5-17:19
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\c6fd8c1398baeadec491009d247dda21\AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\c6fd8c1398baeadec491009d247dda21\AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\3e48c0960e89c336000c8254110488f7\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\3e48c0960e89c336000c8254110488f7\AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:12:9-41
+	android:roundIcon
+		ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:13:9-54
+	android:icon
+		ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:11:9-43
+	android:allowBackup
+		ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:10:9-35
+	android:theme
+		ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:15:9-40
+	android:name
+		ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:9:9-37
+activity#com.javiermasero.tmdbapi.view.activity.MainActivity
+ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:19:9-26:20
+	android:screenOrientation
+		ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:20:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:21:13-56
+	android:name
+		ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:19:19-61
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:22:13-25:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:23:17-69
+	android:name
+		ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:23:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:24:17-77
+	android:name
+		ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:24:27-74
+activity#com.javiermasero.tmdbapi.view.activity.SecondActivity
+ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:27:9-33:20
+	android:screenOrientation
+		ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:28:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:29:13-56
+	android:name
+		ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:27:19-63
+intent-filter#action:name:android.intent.action.MAIN
+ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml:30:13-32:29
+uses-sdk
+INJECTED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml
+MERGED from [:data] C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\data\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:data] C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\data\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\a24c2562e451f1852a9fd525f511117a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\a24c2562e451f1852a9fd525f511117a\AndroidManifest.xml:20:5-44
+MERGED from [pub.devrel:easypermissions:1.1.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\easypermissions-1.1.3.aar\97795c116b55807fc0656aa54f080f1a\AndroidManifest.xml:7:5-9:41
+MERGED from [pub.devrel:easypermissions:1.1.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\easypermissions-1.1.3.aar\97795c116b55807fc0656aa54f080f1a\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.salomonbrys.kodein:kodein-android:4.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\kodein-android-4.1.0.aar\d29c5a0070be23b9ff604c222a12f4f5\AndroidManifest.xml:6:5-44
+MERGED from [com.github.salomonbrys.kodein:kodein-android:4.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\kodein-android-4.1.0.aar\d29c5a0070be23b9ff604c222a12f4f5\AndroidManifest.xml:6:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\4e3f4e17862690178b9d67f3660b88b3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\4e3f4e17862690178b9d67f3660b88b3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\a07d4f072b3d4850fa5a50b5f2d17701\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\a07d4f072b3d4850fa5a50b5f2d17701\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\c6fd8c1398baeadec491009d247dda21\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\c6fd8c1398baeadec491009d247dda21\AndroidManifest.xml:7:5-9:41
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\rxandroid-2.0.1.aar\ed721e211629d80192ae3c0badebfc95\AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\rxandroid-2.0.1.aar\ed721e211629d80192ae3c0badebfc95\AndroidManifest.xml:19:5-43
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\0b692475041ba7f968d530aad12d222d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\0b692475041ba7f968d530aad12d222d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\0195500ad6d173b0a381b240ab2cb654\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\0195500ad6d173b0a381b240ab2cb654\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\3e48c0960e89c336000c8254110488f7\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\3e48c0960e89c336000c8254110488f7\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\a41d5b2f8c1c0398b2409708b2d62c4b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\a41d5b2f8c1c0398b2409708b2d62c4b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\938db0e77895df655203b72823ed18ec\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\938db0e77895df655203b72823ed18ec\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\c9be76d045b4966107f76b2a456e301b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\c9be76d045b4966107f76b2a456e301b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\9b7ec61f6c78fa2d4a780fef83bcd69a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\9b7ec61f6c78fa2d4a780fef83bcd69a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\9e77d3599f6135efd92e1e5ddbfb1d4e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\9e77d3599f6135efd92e1e5ddbfb1d4e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\5aa1a4432318416495483b2deed6ffe7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\5aa1a4432318416495483b2deed6ffe7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\4cea9e01decb3819f28ff14df3f4adbb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\4cea9e01decb3819f28ff14df3f4adbb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\d3d8a1d0072055588fc89279ef093564\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\d3d8a1d0072055588fc89279ef093564\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\4c41bf36fe8c3f559ccca32751af8de2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\4c41bf36fe8c3f559ccca32751af8de2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\16b6d0fd8e128222c468ee9b4243ab9a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\16b6d0fd8e128222c468ee9b4243ab9a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\fff71a19a096025afc443ed7556af885\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\fff71a19a096025afc443ed7556af885\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\55521d079352a1c3f56455fc7fc3916d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\55521d079352a1c3f56455fc7fc3916d\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\admin\Desktop\create\TmdbApi\TmdbApi\app\src\main\AndroidManifest.xml
+activity#pub.devrel.easypermissions.AppSettingsDialogHolderActivity
+ADDED from [pub.devrel:easypermissions:1.1.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\easypermissions-1.1.3.aar\97795c116b55807fc0656aa54f080f1a\AndroidManifest.xml:12:9-16:66
+	android:label
+		ADDED from [pub.devrel:easypermissions:1.1.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\easypermissions-1.1.3.aar\97795c116b55807fc0656aa54f080f1a\AndroidManifest.xml:15:13-29
+	android:exported
+		ADDED from [pub.devrel:easypermissions:1.1.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\easypermissions-1.1.3.aar\97795c116b55807fc0656aa54f080f1a\AndroidManifest.xml:14:13-37
+	android:theme
+		ADDED from [pub.devrel:easypermissions:1.1.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\easypermissions-1.1.3.aar\97795c116b55807fc0656aa54f080f1a\AndroidManifest.xml:16:13-63
+	android:name
+		ADDED from [pub.devrel:easypermissions:1.1.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\easypermissions-1.1.3.aar\97795c116b55807fc0656aa54f080f1a\AndroidManifest.xml:13:13-86

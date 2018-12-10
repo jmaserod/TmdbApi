@@ -1,0 +1,4 @@
+#Tue Nov 27 09:39:08 CET 2018
+base.0=C\:\\Users\\admin\\Desktop\\create\\TmdbApi\\TmdbApi\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\5
+path.0=classes.dex
+renamed.0=classes.dex

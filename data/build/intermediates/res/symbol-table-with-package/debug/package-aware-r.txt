@@ -1,0 +1,2 @@
+com.javiermasero.data
+string app_name
