@@ -8,6 +8,7 @@ import com.javiermasero.tmdbapi.R
 import kotlinx.android.synthetic.main.element.view.*
 
 
+
 class FilmAdapter(onItemClick: (Film) -> Unit) : RootAdapter<Film>(onItemClickListener = onItemClick) {
     override val itemLayoutId: Int = R.layout.element
 
@@ -16,18 +17,19 @@ class FilmAdapter(onItemClick: (Film) -> Unit) : RootAdapter<Film>(onItemClickLi
     class PageViewHolder(itemView: View) : RootViewHolder<Film>(itemView = itemView) {
 
         init {
-            itemView.title.setOnClickListener {
+            itemView.title2.setOnClickListener {
                 onItemClickListener(adapterPosition)
             }
-            itemView.description.setOnClickListener { onItemClickListener(adapterPosition) }
-            itemView.poster.setOnClickListener { onItemClickListener(adapterPosition) }
+            //itemView.description.setOnClickListener { onItemClickListener(adapterPosition) }
+            itemView.poster2.setOnClickListener { onItemClickListener(adapterPosition) }
         }
 
         override fun bind(model: Film) {
-            itemView.title.text = model.title
-            itemView.description.text = model.description
-            Glide.with(itemView).load("https://image.tmdb.org/t/p/original" + model.image).into(itemView.poster)
-            itemView.average.text = "Note: " + model.average.toString()
+            itemView.title2.text = model.title
+            //itemView.description.text = model.description
+            Glide.with(itemView).load("https://image.tmdb.org/t/p/original" + model.image).into(itemView.poster2)
+            //itemView.average.text = "Note: " + model.average.toString()
+            itemView.dateDetail2.text = model.date
         }
     }
 }

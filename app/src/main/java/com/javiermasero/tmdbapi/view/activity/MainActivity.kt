@@ -1,6 +1,7 @@
 package com.javiermasero.tmdbapi.view.activity
 
 
+import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.LinearLayoutManager
 import android.view.View
 import com.github.salomonbrys.kodein.Kodein
@@ -40,7 +41,7 @@ class MainActivity : RootActivity<MainPresenter.View>(), MainPresenter.View {
 
     override fun initializeUI() {
         films.adapter = filmsAdapter
-        films.layoutManager = LinearLayoutManager(this)
+        films.layoutManager= GridLayoutManager(this,2)
 
     }
 

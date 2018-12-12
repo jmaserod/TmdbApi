@@ -1,6 +1,5 @@
 package com.javiermasero.tmdbapi.presenter
 
-import com.javiermasero.domain.interactor.GetFilmDetailsUseCase
 import com.javiermasero.domain.interactor.GetFilmsUseCase
 import com.javiermasero.domain.model.Film
 import com.javiermasero.tmdbapi.error.ErrorHandler
